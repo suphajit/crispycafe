@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crispy Cafe</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f3eb;
+            color: #333;
+        }
+
+        header {
+            background-color: #d2691e;
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 1rem;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background-image: url('https://source.unsplash.com/1600x900/?coffee,cafe');
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .hero button {
+            padding: 0.8rem 2rem;
+            font-size: 1rem;
+            background-color: #d2691e;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .hero button:hover {
+            background-color: #a0522d;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-around;
+            padding: 3rem 2rem;
+            background-color: #fff;
+        }
+
+        .feature {
+            text-align: center;
+            max-width: 300px;
+        }
+
+        .feature img {
+            width: 80px;
+            margin-bottom: 1rem;
+        }
+
+        .feature h3 {
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .features {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .feature {
+                margin-bottom: 2rem;
+            }
+
+            header nav a {
+                margin: 0 0.5rem;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Crispy Cafe</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to Crispy Cafe</h1>
+        <p>Where every sip is a story, and every bite is a delight.</p>
+        <button>Explore Our Menu</button>
+    </section>
+
+    <section class="features">
+        <div class="feature">
+            <img src="https://source.unsplash.com/80x80/?coffee" alt="Quality Coffee">
+            <h3>Quality Coffee</h3>
+            <p>We source the finest beans to brew the perfect cup.</p>
+        </div>
+        <div class="feature">
+            <img src="https://source.unsplash.com/80x80/?pastry" alt="Delicious Pastries">
+            <h3>Delicious Pastries</h3>
+            <p>Freshly baked delights that pair perfectly with coffee.</p>
+        </div>
+        <div class="feature">
+            <img src="https://source.unsplash.com/80x80/?cozy" alt="Cozy Ambiance">
+            <h3>Cozy Ambiance</h3>
+            <p>A perfect place to unwind and connect.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Crispy Cafe. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
